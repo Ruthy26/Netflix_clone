@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background: #000000;
+    color: #999999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+}
+
+.bgcover {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("img/bg-cover.jpg") no-repeat center center/cover;
+
+}
+
+.bgcover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.bgcover-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.bgcover-top img {
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%, -50%);
+}
+
+.bgcover-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%, -50%);
+}
+
+.bgcover-content {
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.bgcover-content h1 {
+    font-weight: 600;
+    font-size: 55px;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 60px;
+}
+
+.bgcover-content h3 {
+    color: #ffffff;
+    font-size: 27px;
+    margin: 16px 0;
+    font-weight: 400;
+}
+
+.bgcover-content p {
+    font-size: 19.2px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.bgcover-content input {
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width: 454px;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    font-weight: 500;
+}
+
+.btn {
+
+    display: inline-block;
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.4);
+}
+ .btn:hover {
+    opacity: 0.8;
+ }
+
+ .btn-round {
+    border-radius: 5px;
+ }
+
+ .bgcover-content .btn-lg {
+    position: absolute;
+    left: 461px;
+    bottom: -8vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    height: 43px;
+    width: 10rem;
+    margin-left: 5px;
+    font-weight: 500;
+ }
